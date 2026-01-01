@@ -1,0 +1,9 @@
+{
+  "name": "cli5-main",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "npm-programmatic": "latest",
+    "openssl": "2.0.0"
+  }
+}
