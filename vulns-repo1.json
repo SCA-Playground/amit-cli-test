@@ -1,0 +1,138 @@
+{
+  "scan_ids": [
+    "86b8fa9c-50ad-4913-a9ca-3d104b497643"
+  ],
+  "detections": [
+    {
+      "id": "450b8b20-1e2f-4d28-8b5f-108304a9604b",
+      "message": "Security vulnerability in package 'openssl' referenced in project '': openssl npm package vulnerable to command execution",
+      "type": "vulnerable_code_dependency",
+      "severity": "Critical",
+      "detection_type_id": "9369d10a-9ac0-48d3-9921-5de7fe9a37a7",
+      "detection_details": {
+        "repository_project_id": "R_kgDOQyEX1g::::NPM~~REF_kwDOQyEX1q9yZWZzL2hlYWRzL21haW4",
+        "package_version_id": "NPM::openssl::2.0.0",
+        "alert": {
+          "affected_package_name": "openssl",
+          "package_description": "Nodejs openssl wrapper",
+          "cve_identifier": "CVE-2023-49210",
+          "ghsa_identifier": "GHSA-75w2-qv55-x7fv",
+          "project_path": "",
+          "file_path": "package.json",
+          "lock_file_path": "package-lock.json",
+          "vulnerable_requirements": "2.0.0",
+          "first_patched_version": null,
+          "severity": "CRITICAL",
+          "ecosystem": "NPM",
+          "description": "The openssl (aka node-openssl) NPM package through 2.0.0 was characterized as \"a nonsense wrapper with no real purpose\" by its author, and accepts an opts argument that contains a verb field (used for command execution). NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+          "summary": "openssl npm package vulnerable to command execution",
+          "entity_id": null,
+          "is_direct_dependency": true,
+          "is_dev_dependency": false,
+          "dependency_paths": "openssl 2.0.0",
+          "affected_package_is_specific_version": true,
+          "affected_package_manifest_version": "2.0.0",
+          "resolving_method_type": "DefinedInManifest"
+        },
+        "advisory_severity": "CRITICAL",
+        "organization_id": "O_kgDOCP7w-g",
+        "repository_id": "R_kgDOQyEX1g",
+        "repository_name": "amit-cli-test",
+        "branch_id": "REF_kwDOQyEX1q9yZWZzL2hlYWRzL21haW4",
+        "branch_name": "main",
+        "is_default_branch": false,
+        "detection_source": "Cycode",
+        "vulnerability_id": "CVE-2023-49210",
+        "vulnerability_description": "openssl npm package vulnerable to command execution",
+        "vulnerable_component": "openssl",
+        "vulnerable_component_version": "2.0.0",
+        "vulnerable_resource": "R_kgDOQyEX1g",
+        "package_ecosystem": "NPM",
+        "cvss_score": 9.8,
+        "file_storage_details": [
+          {
+            "file_url": null,
+            "storage_details": {
+              "path": "Github_O_kgDOCP7w-g_R_kgDOQyEX1g_NPM_package.json_6f867710-97fc-4fd0-8213-7c131e1bc4ea.json",
+              "folder": "manifest-files",
+              "size": 293,
+              "is_external": false
+            },
+            "file_name": "package.json",
+            "file_path": "",
+            "file_extension": ".json",
+            "line_in_file": 7,
+            "start_position": 6,
+            "end_position": 6
+          },
+          {
+            "file_url": null,
+            "storage_details": {
+              "path": "Github_O_kgDOCP7w-g_R_kgDOQyEX1g_NPM_package-lock.json_1ededa8c-6054-4588-8d80-9c841a5ccde3.json",
+              "folder": "manifest-files",
+              "size": 1274,
+              "is_external": false
+            },
+            "file_name": "package-lock.json",
+            "file_path": "",
+            "file_extension": ".json",
+            "line_in_file": 0,
+            "start_position": -1,
+            "end_position": -1
+          }
+        ],
+        "epss_info": {
+          "epss": 0.00458,
+          "updated_at": 1765519219910
+        },
+        "epss": 0.00458,
+        "ossf": null,
+        "exploitability": null,
+        "exploitability_maturity": null,
+        "unique_resource_id": "O_kgDOCP7w-g::R_kgDOQyEX1g::package.json",
+        "build_tool": "NPM",
+        "remediation_metadata": {
+          "is_major_version_change_required_for_patch": null
+        },
+        "is_suggested_first_patched_version": false,
+        "has_fix_suggestion": false,
+        "resolving_method_type": "DefinedInManifest",
+        "package_name": "openssl",
+        "package_version": "2.0.0",
+        "ecosystem": "NPM",
+        "manifest_file_path": "package.json",
+        "is_direct_dependency": true,
+        "is_direct_dependency_str": "Yes",
+        "is_dev_dependency": false,
+        "is_dev_dependency_str": "No",
+        "has_fix_in_version": false,
+        "dependency_paths": "openssl 2.0.0",
+        "storage_details": {
+          "path": "Github_O_kgDOCP7w-g_R_kgDOQyEX1g_NPM_package-lock.json_1ededa8c-6054-4588-8d80-9c841a5ccde3.json",
+          "folder": "manifest-files",
+          "size": 1274,
+          "is_external": false
+        },
+        "file_name": "package-lock.json",
+        "file_path": "",
+        "file_extension": ".json",
+        "project_path": "",
+        "line": -1,
+        "line_in_file": 0,
+        "start_position": -1,
+        "end_position": -1,
+        "organization_name": "SCA-Playground",
+        "repository_url": "https://github.com/SCA-Playground/amit-cli-test",
+        "branch_url": "https://github.com/SCA-Playground/amit-cli-test/tree/main",
+        "file_url": "https://github.com/SCA-Playground/amit-cli-test/blob/main/package-lock.json#L0",
+        "custom_remediation_guidelines": "",
+        "remediation_guidelines": "",
+        "description": "Detects when new vulnerabilities affect your dependencies.",
+        "policy_display_name": "Vulnerability found in dependency"
+      },
+      "detection_rule_id": "93f190a0-6627-4767-9f98-fab96b33477f"
+    }
+  ],
+  "report_urls": [],
+  "errors": []
+}
