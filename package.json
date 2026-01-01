@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "npm-programmatic": "latest",
+    "npm-programmatic": "0.6.3",
     "openssl": "2.0.0"
   }
 }
